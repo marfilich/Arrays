@@ -134,15 +134,14 @@ double sum_elements_14(double* ptr_array, int begin, int end)
 
 int find_element_14(double* ptr_array, int size, double element)
 {
-	int index = -1;
 	for (int i = 0; i <= size; i++)
 	{
 		if (element == ptr_array[i])
 		{
-			index = i;
+			return i;
 		}
 	}
-	return index;
+	return -1;
 }
 
 //ДЗ работа 14
