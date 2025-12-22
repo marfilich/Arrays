@@ -36,7 +36,6 @@ int task11() {
     setlocale(LC_ALL, "RUS");
     double A[N];
     double B[N];
-    float sr_z = 0;
     full_elements_keyboard(A, B);
     puts("Массив A");
     put_elements(A, N);
@@ -187,5 +186,6 @@ int task16(int size) {
     free(ptr_array_c);
     free(ptr_array_d);
     return 0;
+
 
 }
