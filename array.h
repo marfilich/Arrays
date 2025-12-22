@@ -17,7 +17,7 @@ double* full_elements_keyboard(double* A, double* B);
 * @param A указатель на первый массив
 * @return сумму элементов массива, расположенных между первым и последним положительными элементами или -1 если нет положительных или между ними нет чисел
 */
-double funtion_homework_11(float* A);
+double funtion_sum(float* A);
 
 
 //Работа 14
@@ -71,7 +71,7 @@ int find_element(double* ptr_array, int size, double element);
  * @param k позиция, до которой ищется максимальный элемент
  * @return максимальное значение
 */
-double funtion_14(double* ptr_array, int k);
+double funtion_max(double* ptr_array, int k);
 
 //Работа 16
 /**
@@ -125,3 +125,4 @@ double* even_uneven(double* ptr_array_a, double* ptr_array_b, double* ptr_array_
 
 
 #endif
+
