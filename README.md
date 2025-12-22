@@ -40,49 +40,41 @@ Arrays/
 
 ## Реализованные функции
 
-### 1. `float* full_elements_11(float* A, float* B)`
+### 1. `double* full_elements_keyboard(double* A, double* B)`
 - **Назначение**: Заполнение массива значениями с консоли
 - **Параметры**: 
   - `A` - указатель на первый массив
   - `B` - указатель на второй массива
 - **Возвращает**: указатель на заполненный массив
 
-### 2. `float put_elements_11(float* A, float* B, float sr_z)`
-- **Назначение**: Печать элементов массива и поиск среднего значения
-- **Параметры**: 
-  - `A` - указатель на первый массив
-  - `B` - указатель на второй массива
-  - `sr_z` - среднее арифметическое элементов массива
-- **Возвращает**: среднее арифметическое элементов массива
-
-### 3. `double funtion_homework_11(float* A)`
+### 2. `double funtion_sum(double* A)`
 - **Назначение**: Сумму элементов массива, расположенных между первым и последним положительными элементами
 - **Параметры**: 
   - `A` - указатель на первый массив
 - **Возвращает**: сумму элементов массива, расположенных между первым и последним положительными элементами или -1 если нет положительных или между ними нет чисел
 
-### 4. `double* full_elements_14(double* ptr_array, int size)`
+### 3. `double* full_elements_func(double* ptr_array, int size)`, `double* full_elements_random(double* ptr_array, int size)`
 - **Назначение**: Заполнение массива значениями
 - **Параметры**: 
   - `ptr_array` - указатель на массив
   - `size` - размер массива
 - **Возвращает**: указатель на заполненный массив
 
-### 5. `int put_elements_14(double* ptr_array, int size)`
+### 4. `int put_elements(double* ptr_array, int size)`
 - **Назначение**: Печать элементов массива
 - **Параметры**: 
   - `ptr_array` - указатель на массив
   - `size` - размер массива
 - **Возвращает**: 0
 
-### 6. `double* calc_elements_14(double* ptr_array, int size)`
+### 5. `double* calc_elements_square(double* ptr_array, int size)`
 - **Назначение**: Обработка элементов массива: возвести в квадрат значение каждого элемента массива
 - **Параметры**: 
   - `ptr_array` - указатель на массив
   - `size` - размер массива
 - **Возвращает**: указатель на обработанный массив
 
-### 7. `double sum_elements_14(double* ptr_array, int begin, int end)`
+### 6. `double sum_elements(double* ptr_array, int begin, int end)`
 - **Назначение**: Вычисление суммы элементов массива в диапазоне [begin, end]
 - **Параметры**: 
   - `ptr_array` - указатель на массив
@@ -90,7 +82,7 @@ Arrays/
   - `end` - конечный индекс (включительно)
 - **Возвращает**: сумму элементов
 
-### 8. `int find_element_14(double* ptr_array, int size, double element)`
+### 7. `int find_element(double* ptr_array, int size, double element)`
 - **Назначение**: Поиск элемента в массиве
 - **Параметры**: 
   - `ptr_array` - указатель на массив
@@ -98,21 +90,14 @@ Arrays/
   - `element` - искомый элемент
 - **Возвращает**: индекс найденного элемента или -1 если не найден
 
-### 9. `double funtion_14(double* ptr_array, int k)`
+### 8. `double funtion_max(double* ptr_array, int k)`
 - **Назначение**: Поиск максимального значения элемента массива, находящихся до заданной позиции K включительно
 - **Параметры**: 
   - `ptr_array` - указатель на массив
   - `k` - позиция, до которой ищется максимальный элемент
 - **Возвращает**: максимальное значение
 
-### 10. `double* full_elements_16(double* ptr_array, int size)`
-- **Назначение**: Заполнение массива случайными значениями
-- **Параметры**: 
-  - `ptr_array` - указатель на массив
-  - `size` - размер массива
-- **Возвращает**: указатель на заполненный массив
-
-### 11. `double* calc_elements_16(double* ptr_array, int size, double a, int new_size)`
+### 9. `double* delete_more_than_a(double* ptr_array, int size, double a, int new_size)`
 - **Назначение**: Удаление элементов значение которых превышает A
 - **Параметры**: 
   - `ptr_array` - указатель на массив
@@ -121,14 +106,14 @@ Arrays/
   - `new_size` - размер нового массива
 - **Возвращает**: указатель на заполненный массив
 
-### 12. `double* last_negative(double* ptr_array, int* size)`
+### 10. `double* last_negative(double* ptr_array, int* size)`
 - **Назначение**: Вставку -999 после последнего отрицательного
 - **Параметры**: 
   - `ptr_array` - указатель на массив
   - `size` - размер массива
 - **Возвращает**: указатель на заполненный массив
 
-### 13. `int find_size_d(int size_a, int size_b, double* ptr_array_a, double* ptr_array_b)`
+### 11. `int find_size_d(int size_a, int size_b, double* ptr_array_a, double* ptr_array_b)`
 - **Назначение**: Вычисление размера массива D
 - **Параметры**: 
   - `size_a` - размер массива A
@@ -137,7 +122,7 @@ Arrays/
   - `ptr_array_b` - указатель на массив B
 - **Возвращает**: размер массива D
 
-### 14. `double* even_uneven(double* ptr_array_a, double* ptr_array_b, double* ptr_array_d, int size_a, int size_b, int size_d)`
+### 12. `double* even_uneven(double* ptr_array_a, double* ptr_array_b, double* ptr_array_d, int size_a, int size_b, int size_d)`
 - **Назначение**: Заполнение массива D, в котором чередуются четные элементы массива A и нечетные B
 - **Параметры**: 
   - `ptr_array_a` - указатель на массив A
