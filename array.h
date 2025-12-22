@@ -13,15 +13,6 @@
 double* full_elements_keyboard(double* A, double* B);
 
 /**
- * Печать элементов массива и поиск среднего значения
- * @param A указатель на первый массив
- * @param B указатель на второй массива
- * @param sr_z среднее арифметическое элементов массива
- * @return среднее арифметическое элементов массива
- */
-//float put_elements_11(float* A, float* B, float sr_z);
-
-/**
 * Сумму элементов массива, расположенных между первым и последним положительными элементами.
 * @param A указатель на первый массив
 * @return сумму элементов массива, расположенных между первым и последним положительными элементами или -1 если нет положительных или между ними нет чисел
@@ -130,6 +121,7 @@ int find_size_d(int size_a, int size_b, double* ptr_array_a, double* ptr_array_b
 * @return указатель на массив D
 */
 double* even_uneven(double* ptr_array_a, double* ptr_array_b, double* ptr_array_d, int size_a, int size_b, int size_d);
+
 
 
 #endif
