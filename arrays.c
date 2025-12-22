@@ -24,7 +24,7 @@ double* full_elements_keyboard(double* A, double* B)
 	return B;
 }
 
-double funtion_homework_11(double* A)
+double funtion_sum(double* A)
 {
 	int first_p = 0, last_p = 0;
 	double  sum = 0;
@@ -128,7 +128,7 @@ int find_element(double* ptr_array, int size, double element)
 }
 
 //ДЗ работа 14
-double funtion_14(double* ptr_array, int k)
+double funtion_max(double* ptr_array, int k)
 {
 	double max = ptr_array[0];
 	for (int i = 0; i <= k; i++)
@@ -247,4 +247,5 @@ double* even_uneven(double* ptr_array_a, double* ptr_array_b, double* ptr_array_
 		}
 	}
 	return ptr_array_d;
+
 }
