@@ -41,7 +41,7 @@ int task11() {
     put_elements(A, N);
     puts("Массив B");
     put_elements(B, N);
-    printf("Сумму элементов массива, расположенных между первым и последним положительными элементами равна %lf\n", funtion_homework_11(A));
+    printf("Сумму элементов массива, расположенных между первым и последним положительными элементами равна %lf\n", funtion_sum(A));
 
 }
 
@@ -81,7 +81,7 @@ int task14(int size) {
     printf("Индекс элемента %lf равен %d\n", a, find_element(ptr_array, size, a));
 
     // Домашнее задание
-    printf("Максимальное значение до числа на позиции %d равно %.4lf\n", k, funtion_14(ptr_array, k));
+    printf("Максимальное значение до числа на позиции %d равно %.4lf\n", k, funtion_max(ptr_array, k));
 
     free(ptr_array);
 }
@@ -189,3 +189,4 @@ int task16(int size) {
 
 
 }
+
